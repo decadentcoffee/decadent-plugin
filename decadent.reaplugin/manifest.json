@@ -1,0 +1,50 @@
+{
+  "id": "decadent.reaplugin",
+  "author": "Decadent",
+  "name": "Decadent",
+  "description": "Connects this tablet to Decadent: your coffees, your shots and the profile for the next one.",
+  "version": "0.40.1",
+  "apiVersion": 1,
+  "permissions": [
+    "log",
+    "api",
+    "pluginStorage",
+    "notifications"
+  ],
+  "settings": {
+    "DecadentUrl": {
+      "type": "string",
+      "label": "Decadent address",
+      "default": "https://decadentcoffee.app",
+      "description": "Where this tablet reports to. Leave it as it is unless Decadent told you otherwise."
+    },
+    "PairCode": {
+      "type": "string",
+      "label": "Pairing code",
+      "description": "Only when Decadent asks for it: the six digits from Settings → Machine. It works once and expires after ten minutes."
+    },
+    "TabletName": {
+      "type": "string",
+      "label": "Name shown in Decadent",
+      "default": "Decent tablet",
+      "description": "How this tablet appears under Settings → Machine."
+    }
+  },
+  "api": [
+    {
+      "id": "status",
+      "type": "http",
+      "data": {}
+    },
+    {
+      "id": "live",
+      "type": "http",
+      "data": {}
+    },
+    {
+      "id": "pair",
+      "type": "http",
+      "data": {}
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+name: release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the tag is the manifest version
+        run: |
+          test "v$(jq -r .version decadent.reaplugin/manifest.json)" = "$GITHUB_REF_NAME"
+      - name: Pack
+        run: |
+          zip -r decadent.reaplugin.zip decadent.reaplugin
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" decadent.reaplugin.zip --title "Decadent plugin ${GITHUB_REF_NAME#v}" --notes "Install or update from Decaid. Open Plugins, choose Install plugin, then GitHub Release, and type decadentcoffee/plugin."
