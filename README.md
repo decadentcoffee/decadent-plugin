@@ -4,6 +4,10 @@ Connects a Decent espresso tablet running [Decaid](https://github.com/decentespr
 
 ## Install
 
+The easy way: [Tablet setup](https://decadentcoffee.app/clean-decent-tablet/). Plug the tablet into a computer with a USB cable and open that page in Chrome or Edge. It installs the Decadent app on the tablet, adds this plugin to Decaid and switches it on.
+
+Or by hand:
+
 1. On the tablet, open Decaid and go to **Plugins**.
 2. Open the cogwheel menu and choose **Install plugin**, then **GitHub Release**.
 3. Type `decadentcoffee/decadent-plugin` and choose **Install**.
