@@ -6,7 +6,7 @@ Connects a Decent espresso tablet running [Decaid](https://github.com/decentespr
 
 1. On the tablet, open Decaid and go to **Plugins**.
 2. Open the cogwheel menu and choose **Install plugin**, then **GitHub Release**.
-3. Type `decadentcoffee/plugin` and choose **Install**.
+3. Type `decadentcoffee/decadent-plugin` and choose **Install**.
 4. Decaid adds the plugin switched off. On **Decadent** in the list, open the **⋮** menu and choose **Load**, then switch on **Auto-load on startup**.
 
 Decaid keeps the plugin updated from here.

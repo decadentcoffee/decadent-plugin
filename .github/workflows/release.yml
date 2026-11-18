@@ -21,4 +21,4 @@ jobs:
         run: |
           # A commit subject that ends "(candidate)" makes a pre-release: Decaid installs only the latest full release.
           pre=""; case "$(git log -1 --format=%s)" in *"(candidate)") pre="--prerelease" ;; esac
-          gh release create "$GITHUB_REF_NAME" decadent.reaplugin.zip $pre --title "Decadent plugin ${GITHUB_REF_NAME#v}" --notes "Install or update from Decaid. Open Plugins, choose Install plugin, then GitHub Release, and type decadentcoffee/plugin."
+          gh release create "$GITHUB_REF_NAME" decadent.reaplugin.zip $pre --title "Decadent plugin ${GITHUB_REF_NAME#v}" --notes "Install or update from Decaid. Open Plugins, choose Install plugin, then GitHub Release, and type decadentcoffee/decadent-plugin."
