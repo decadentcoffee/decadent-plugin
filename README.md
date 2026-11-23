@@ -25,8 +25,8 @@ Needs Decaid 0.9.2 or later.
 
 ## What it does
 
-- Reports the machine's state and finished shots to your Decadent account.
+- Reports the machine's state and finished shots to your Decadent account, each shot as soon as Decaid saves it.
 - Loads the profile Decadent recommends when you choose it in the app.
 - It starts nothing on the machine by itself.
 
-Permissions: `log`, `api`, `pluginStorage`, `notifications`.
+Permissions: `log`, `api`, `pluginStorage`, `notifications`, `events.shots`. From 0.66.0 the plugin hears when Decaid saves a shot (`events.shots`), so the shot reaches Decadent at once. Decaid holds that update until you approve the new permission: open Plugins, tap Review under Decadent, then Approve and update.
