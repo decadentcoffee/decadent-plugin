@@ -3,13 +3,14 @@
   "author": "Decadent",
   "name": "Decadent",
   "description": "Connects this tablet to Decadent: your coffees, your shots and the profile for the next one.",
-  "version": "0.64.0",
+  "version": "0.66.0",
   "apiVersion": 1,
   "permissions": [
     "log",
     "api",
     "pluginStorage",
-    "notifications"
+    "notifications",
+    "events.shots"
   ],
   "settings": {
     "DecadentUrl": {
