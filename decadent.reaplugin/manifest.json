@@ -3,7 +3,7 @@
   "author": "Decadent",
   "name": "Decadent",
   "description": "Connects this tablet to Decadent: your coffees, your shots and the profile for the next one.",
-  "version": "0.72.0",
+  "version": "0.73.0",
   "apiVersion": 1,
   "permissions": [
     "log",
@@ -22,7 +22,7 @@
     "PairCode": {
       "type": "string",
       "label": "Pairing code",
-      "description": "Only when Decadent asks for it: the six digits from Settings → Machine. It works once and expires after ten minutes."
+      "description": "Only when Decadent asks for it: the digits from Settings → Machine. It works once and expires after ten minutes."
     },
     "TabletName": {
       "type": "string",
