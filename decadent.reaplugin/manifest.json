@@ -3,7 +3,7 @@
   "author": "Decadent",
   "name": "Decadent",
   "description": "Connects this tablet to Decadent: your coffees, your shots and the profile for the next one.",
-  "version": "0.73.0",
+  "version": "0.74.0",
   "apiVersion": 1,
   "permissions": [
     "log",
